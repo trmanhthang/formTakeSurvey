@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take Survey</title>
+    <style>
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h2 {
+            margin-bottom: 0;
+            font-size: 14px;
+            color: #4a4a4a;
+        }
+
+        .table, 
+        .col, 
+        .tableHead {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        input {
+            outline: none;
+        }
+
+        .tableRow:nth-child(odd) {
+            background-color: #ddd;
+        }
+
+        .col,
+        .tableHead {
+            padding: 8px;
+        }
+
+    </style>
+</head>
+<body>
+    <div style="
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 10px;
+        ">
+        <h1 style="
+        margin: 0; 
+        ">
+            Market Research Survey
+        </h1>
+        <span style="
+        margin-top: 4px; 
+        color: #878787;
+        ">
+            Please take a few moments to complete this satisfaction survey
+        </span>
+    </div>
+
+    <form action="">
+        
+        <h2>
+            What is your age range?
+        </h2>
+        <select name="age" id="" style="
+        width: 640px;
+        padding: 2px 4px;
+        margin-top: 8px;
+        font-size: 16px;
+        ">
+            <option value="">18 - 24</option>
+            <option value="">25 - 34</option>
+            <option value="">35 - 50</option>
+            <option value="">50+</option>
+        </select>
+
+        <h2>
+            What is your yearly income range?
+        </h2>
+        <select name="income" id="" style="
+        width: 640px;
+        padding: 2px 4px;
+        margin-top: 8px;
+        font-size: 16px;
+        ">
+            <option value="">$0 - $25,000</option>
+            <option value="">$25,001 - $50,000</option>
+            <option value="">$50,001 - $100,000</option>
+            <option value="">$100,000+</option>
+        </select>
+        
+        <h2>
+            Gender Identity
+        </h2>
+        <input type="radio" name="gender">Male<br>
+        <input type="radio" name="gender">Female<br>
+        
+        <h2>
+            Which of the following products have your purchased in the last 2 months. Please check all that apply.
+        </h2>
+        <input type="checkbox" name="product">Product 1
+        <br>
+        <input type="checkbox" name="product">Product 2
+        <br>
+        <input type="checkbox" name="product">Product 3
+
+        <h2>
+            How often would you use our new product?
+        </h2>
+        <input type="radio" name="time">Daily
+        <br>
+        <input type="radio" name="time">Weekly
+        <br>
+        <input type="radio" name="time">Monthly
+
+        <h2>
+            What would you pay for the new product?
+        </h2>
+        <table>
+            <tr>
+
+            </tr>
+                <td>
+                    <span>$</span>
+                </td>
+                <td>
+                    <input type="number" name="dollars" style="width: 100px;">
+                </td>
+                <td>
+                    <span>.</span>
+                </td>
+                <td>
+                    <input type="number" name="cents" style="width: 30px;">
+                </td>
+            <tr>
+                <td></td>
+                <td>
+                    Dollars
+                </td>
+                <td></td>
+                <td>
+                    Cents
+                </td>
+            </tr>
+
+        </table>
+        
+        <h2>
+            What features would you like to see in the new product.
+        </h2>
+        <textarea cols="10" rows="10" style="width: 100%; margin-top: 8px;"></textarea>
+
+        <h2>
+            Please rate your level of agreement with the following statements
+        </h2>
+        <table class="table" style="
+        width: 100%; 
+        margin-top: 8px;
+        ">
+            <tr class="tableRow">
+                <th class="tableHead"></th>
+                <th class="tableHead">
+                    Strongly Disagree
+                </th>
+                <th class="tableHead">
+                    Disagree
+                </th>
+                <th class="tableHead">
+                    Agree
+                </th>
+                <th class="tableHead">
+                    Strongly Agree
+                </th>
+            </tr>
+            <tr class="tableRow">
+                <td class="col" style="font-weight: 600;">
+                    Our products are priced fairly.
+                </td>
+                <td class="col" style="text-align: center;">
+                    <input type="radio" name="good price">
+                </td>
+                <td class="col" style="text-align: center;">
+                    <input type="radio" name="good price">
+                </td>
+                <td class="col" style="text-align: center;">
+                    <input type="radio" name="good price">
+                </td>
+                <td class="col" style="text-align: center;">
+                    <input type="radio" name="good price">
+                </td>
+            </tr>
+            <tr class="tableRow">
+                <td class="col" style="font-weight: 600;">
+                    Our products are high quality.
+                </td>
+                <td class="col" style="text-align: center;">
+                    <input type="radio" name="quality">
+                </td>
+                <td class="col" style="text-align: center;">
+                    <input type="radio" name="quality">
+                </td>
+                <td class="col" style="text-align: center;">
+                    <input type="radio" name="quality">
+                </td>
+                <td class="col" style="text-align: center;">
+                    <input type="radio" name="quality">
+                </td>
+            </tr>
+            <tr class="tableRow">
+                <td class="col" style="font-weight: 600;">
+                    You would recommend our product to a friend or coworker
+                </td>
+                <td class="col" style="text-align: center;">
+                    <input type="radio" name="productSharing">
+                </td>
+                <td class="col" style="text-align: center;">
+                    <input type="radio" name="productSharing">
+                </td>
+                <td class="col" style="text-align: center;">
+                    <input type="radio" name="productSharing">
+                </td>
+                <td class="col" style="text-align: center;">
+                    <input type="radio" name="productSharing">
+                </td>
+            </tr>
+        </table>
+        <input type="submit" value="Subbmit" style="margin-top: 8px; padding: 8px 4px;">
+    </form>
+</body>
+</html>
